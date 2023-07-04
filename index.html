@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+
+
+
+    <div class="cordinateDiv" data-tilt data-tilt-scale="1.05" data-tilt-max="5">
+        <div class="cordinateDiv-top">
+            <p class="title">
+                Location's Weather
+            </p>
+        </div>
+        <div class="cordinateDiv-mid">
+            <input type="text" id="Latidude" placeholder="Latidude">
+            <input type="text" id="Longitude" placeholder="Longitude">
+        </div>
+        <div class="cordinateDiv-bottom">
+            <button class="check-button" onclick="urlChange()">
+                Check Weather
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="app" data-tilt data-tilt-scale="1.05" data-tilt-max="5"> 
+
+        <script src="tilt.js" ></script>
+
+        <div class="weatherIconDiv">
+            <img class="weatherImg" id="weatherImg" src="" alt=" ">
+        </div>
+
+        <div class="ınfoDiv">
+
+            <div class="weatherTypeDiv">
+                <p id="weathercode">
+                    weathercode
+                </p>
+            </div>
+
+            <div class="temperatureDiv">
+                <p id="temperature">
+                    temperature
+                </p>
+            </div>
+
+            <div class="windSpeedDiv">
+                <p id="windspeed">
+                    windspeed
+                </p>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</body>
+</html>

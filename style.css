@@ -1,0 +1,261 @@
+@font-face {
+    font-family: "outfit";
+    src: url(Assets/font/Outfit-Medium.ttf);
+}
+
+body{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+    background-color: rgb(54, 48, 98);
+}
+
+.cordinateDiv{
+    margin: 5vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+    width: 45vh;
+    height: 60vh;
+
+    border-radius: 3vh 0vh 3vh 0vh;
+    background-color: rgb(77, 76, 125);
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.397);
+}
+div.cordinateDiv-top{
+    margin-top: 5vh;
+    width: fit-content;
+    height: fit-content;
+}
+div.cordinateDiv-mid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    
+    margin: 5vh;
+    width: fit-content;
+    height: fit-content;
+}
+div.cordinateDiv-bottom{
+    margin-bottom: 5vh;
+    width: fit-content;
+    height: fit-content;
+    
+}
+p.title{
+    margin: 0%;
+    background-color: rgb(77, 76, 125);
+    font-family: "outfit", sans-serif;
+    font-size: 40px;
+    color: rgb(216, 185, 195); 
+    
+    border-bottom: 3px solid rgb(216, 185, 195);
+}
+.check-button{   
+    border: 3px solid rgb(216, 185, 195);
+    border-radius: 4vh 4vh 4vh 4vh;
+    background-color: rgb(77, 76, 125);
+
+    width: 30vh;
+    height: 7vh;
+
+    font-family: "outfit", sans-serif;
+    font-size: 20px;
+    color: rgb(216, 185, 195);
+
+    transition: .2s ease-in-out 0s;
+}
+:hover.check-button {
+    
+    transform: scale(1.1);
+
+    border: 3px solid rgb(216, 185, 195);
+    border-radius: 4vh 4vh 4vh 4vh;
+    background-color: rgb(216, 185, 195);
+
+    width: 30vh;
+    height: 7vh;
+
+    font-family: "outfit", sans-serif;
+    font-size: 20px;
+    color: rgb(77, 76, 125);
+
+    cursor: pointer;
+}
+div.cordinateDiv-mid input{
+    transition: .2s ease-in-out 0s;
+
+    scrollbar-width: 0;
+    margin: 2vh;
+
+    width: 30vh;
+    height: 7vh;
+
+    border: 3px solid rgb(130, 115, 151);
+    border-radius: 2vh 2vh 2vh 2vh;
+    background-color: rgb(77, 76, 125);
+    
+    font-family: "outfit", sans-serif;
+    font-size: 30px;
+    color: rgb(216, 185, 195);
+    
+    text-align: center;
+ 
+}
+input[type="text"]:focus {
+    transition: .2s ease-in-out 0s;
+
+    margin: 2vh;
+
+    width: 32vh;
+    height: 9vh;
+
+    border: 3px solid rgb(130, 115, 151);
+    border-radius: 5vh 5vh 5vh 5vh;
+    background-color: rgb(77, 76, 125);
+    
+    font-family: "outfit", sans-serif;
+    font-size: 30px;
+    color: rgb(216, 185, 195);
+    
+    text-align: center;
+}
+::placeholder{
+    color: rgb(130, 115, 151);
+}
+
+
+
+
+
+
+
+
+
+
+div.app{
+    
+    margin: 5vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+    width: 40vh;
+    height: 60vh;
+
+    border-radius: 3vh 0vh 3vh 0vh;
+    background-color: rgb(77, 76, 125);
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.397);
+}
+
+div.weatherIconDiv{
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    
+    width: 35.5vh;
+    height: 27vh;
+
+    border-top: 3px solid transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-radius: 2vh 0vh 0vh 0vh;
+    background-color: rgb(130, 115, 151);
+}
+img.weatherImg{
+    transform: perspective(1000px);
+
+    width: 23vh;
+    height: 23vh;
+
+    background-color: transparent;
+}
+
+
+
+div.ınfoDiv{
+    margin: 0%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+    width: 35.5vh;
+    height: 28vh;
+
+    border: 3px solid rgb(130, 115, 151);
+    border-radius: 0vh 0vh 2vh 0vh;
+    background-color: rgb(77, 76, 125);
+
+    color: rgb(216, 185, 195);
+}
+
+.weatherTypeDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+    width: 35.5vh;
+    height: 9vh;
+
+    border-bottom: 3px solid rgb(130, 115, 151);
+    background-color: rgb(77, 76, 125);
+}
+.temperatureDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+    width: 35.5vh;
+    height: 9vh;
+
+    background-color: rgb(77, 76, 125);
+}
+.windSpeedDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+
+    width: 35.5vh;
+    height: 9vh;
+
+    border-top: 3px solid rgb(130, 115, 151);
+    border-radius: 0vh 0vh 2vh 0vh;
+    background-color: rgb(77, 76, 125);
+}
+div.ınfoDiv p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+
+    background-color: rgb(77, 76, 125);
+    font-family: "outfit", sans-serif;
+    font-size: 20px;
+}

@@ -1,4 +1,6 @@
 let url="";
+let mainlatitude="";
+let mainlongitude="";
 
 function urlChange(){
     mainlatitude = parseInt(document.getElementById("Latidude").value);

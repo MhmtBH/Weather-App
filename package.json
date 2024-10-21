@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Open-Source weather app for checking weather forecasts",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MehmetBH",
+  "license": "MIT",
+  "keywords": [
+    "weather",
+    "app",
+    "electron",
+    "open-source"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "electron": "^32.2.0"
+  },
+  "dependencies": {}
+}

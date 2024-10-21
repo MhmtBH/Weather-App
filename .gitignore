@@ -1,0 +1,21 @@
+# Node.js dependencies
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Electron application settings
+*.log
+*.tmp
+
+# Temporary files
+*.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Miscellaneous
+.env

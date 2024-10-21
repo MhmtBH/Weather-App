@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; connect-src 'self' https://api.open-meteo.com https://geocoding-api.open-meteo.com;" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body">
+    <div id="Top-Panel">
+        <div id="Left-Panel">
+            <div id="Weather-Input-Div">
+                <input id="latitude-input" type="number" placeholder="Latitude" aria-label="Latitude">
+                <input id="longitude-input" type="number" placeholder="Longitude" aria-label="Longitude">
+                <button id="get-weather-button">Get Weather</button>
+            </div>
+            <div id="Image-Holder">
+                <img id="Weather-Image" src="./images/transparent.png" alt="Weather Icon">
+            </div>
+            <div id="Weather-Data-Div">
+                <div id="Weather-Data-Panel">
+                    <p id="Weather-Data"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Right-Panel">
+            <div id="Location-Input-Div">
+                <input id="Location-Input" placeholder="Enter Location Name" aria-label="Location">
+                <button id="get-location-button">Get Location</button>
+            </div>
+            <div id="Location-List-Div">
+                <!-- Location list items will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <div id="Bottom-Panel">
+        <button id="Github">
+            This project is open source. The source code is available at github.com/MhmtBH. I welcome your contributions
+            and feedback!
+            If you like the project, please consider giving it a ⭐️ star ⭐️ to show your support!
+        </button>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+
+</html>

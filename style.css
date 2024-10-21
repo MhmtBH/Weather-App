@@ -1,0 +1,307 @@
+@font-face {
+    font-family: HelveticaMedium;
+    src: url("fonts/HelveticaNeueMedium.otf");
+}
+
+@font-face {
+    font-family: HelveticaLight;
+    src: url("fonts/HelveticaNeueLight.otf");
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    background-size: cover;
+    background-color: #1d1d1d;
+    backdrop-filter: blur(2px);
+}
+
+#Top-Panel {
+    display: flex;
+}
+
+#Left-Panel {
+    background-color: transparent;
+    width: 540px;
+    height: 600px;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Weather-Input-Div {
+    display: flex;
+    background-color: #303030;
+    width: 540px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Weather-Input-Div input {
+    display: flex;
+    background-color: #303030;
+    color: white;
+    font-family: HelveticaLight;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 90px;
+    height: 30px;
+    transition: all 1s ease;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-indent: 10px;
+}
+
+#Weather-Input-Div input::placeholder {
+    text-align: left;
+    transition: all 1s ease;
+    opacity: 100%;
+    color: #ededed;
+}
+
+#Weather-Input-Div input:focus {
+    outline: none;
+    width: 170px;
+    height: 30px;
+    border: 1px solid #4a56ff;
+}
+
+#Weather-Input-Div input:focus::placeholder {
+    text-align: left;
+    opacity: 0%;
+    color: #ededed;
+}
+
+#Weather-Input-Div input::-webkit-outer-spin-button,
+#Weather-Input-Div input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+#Weather-Input-Div button {
+    display: flex;
+    cursor: pointer;
+    background-color: #4a56ff;
+    color: white;
+    font-family: HelveticaMedium;
+    border: 1px solid #4a56ff;
+    border-radius: 25px;
+    width: 150px;
+    height: 30px;
+    transition: all 0.25s ease;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#Weather-Input-Div button:hover {
+    display: flex;
+    cursor: pointer;
+    background-color: #8d94ff;
+    color: #373c86;
+    border: 1px solid #8d94ff;
+}
+
+#Image-Holder {
+    background-color: #1d1d1d;
+    width: 250px;
+    height: 250px;
+    margin-top: 25px;
+    border: 0px solid transparent;
+    border-radius: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#Weather-Image {
+    width: 175px;
+    height: 175px;
+}
+
+#Weather-Data-Div {
+    background-color: transparent;
+    width: 540px;
+    height: 275px;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Weather-Data-Panel {
+    background: #1d1d1d;
+    opacity: 0;
+    width: 500px;
+    height: 240px;
+    border: solid 2px transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Weather-Data-Div p {
+    color: #ededed;
+    font-family: HelveticaLight;
+    padding: 0%;
+    margin: 0%;
+    font-size: 25px;
+}
+
+#Right-Panel {
+    background-color: transparent;
+    width: 540px;
+    height: 600px;
+}
+
+#Location-Input-Div {
+    display: flex;
+    background-color: #303030;
+    width: 540px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Location-Input-Div input {
+    display: flex;
+    background-color: #303030;
+    color: white;
+    font-family: HelveticaLight;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 175px;
+    height: 30px;
+    transition: all 1s ease;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-indent: 10px;
+}
+
+#Location-Input-Div input::placeholder {
+    text-align: left;
+    transition: all 1s ease;
+    opacity: 100%;
+    color: #ededed;
+}
+
+#Location-Input-Div input:focus {
+    outline: none;
+    width: 300px;
+    height: 30px;
+    border: 1px solid #4a56ff;
+}
+
+#Location-Input-Div input:focus::placeholder {
+    outline: none;
+    opacity: 0%;
+    width: 300px;
+    height: 30px;
+}
+
+#Location-List-Div {
+    background-color: transparent;
+    width: 540px;
+    height: 550px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: baseline;
+}
+
+#Location-List-Div::-webkit-scrollbar {
+    width: 10px;
+}
+
+#Location-List-Div::-webkit-scrollbar-track {
+    background: #1d1d1d;
+}
+
+#Location-List-Div::-webkit-scrollbar-thumb {
+    background-color: #ededed;
+    border: solid 1px transparent;
+    border-radius: 25px;
+    transition: background-color 1s ease;
+}
+
+#Location-List-Div::-webkit-scrollbar-thumb:hover {
+    background-color: #4a56ff;
+    cursor: pointer;
+}
+
+#Location-Input-Div button {
+    display: flex;
+    cursor: pointer;
+    background-color: #4a56ff;
+    color: white;
+    font-family: HelveticaMedium;
+    border: 1px solid #4a56ff;
+    border-radius: 25px;
+    width: 150px;
+    height: 30px;
+    transition: all 0.25s ease;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#Location-Input-Div button:hover {
+    display: flex;
+    cursor: pointer;
+    background-color: #8d94ff;
+    color: #373c86;
+    border: 1px solid #8d94ff;
+}
+
+#Location-List-Div button {
+    width: 400px;
+    height: 200px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    background-color: #1d1d1d;
+    color: white;
+    font-family: HelveticaLight;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0%;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    text-align: center;
+}
+
+#Location-List-Div button:hover {
+    border: 2px solid #4a56ff;
+}
+
+#Bottom-Panel {
+    width: 1080px;
+    height: 30px;
+    background-color: rgba(0, 8, 20, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Github {
+    width: 1080px;
+    height: 30px;
+    background-color: black;
+    border: solid 0px transparent;
+    cursor: pointer;
+    color: #ededed;
+    font-family: HelveticaLight;
+    font-size: 11.75px;
+    text-align: center;
+}
